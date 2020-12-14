@@ -298,7 +298,7 @@ html {
       justify-self: end;
 }
 
-.min-card-title p {
+.min-card-title h3 {
   font-size: 1rem;
   font-weight: bold;
 }
