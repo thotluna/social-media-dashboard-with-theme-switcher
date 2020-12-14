@@ -22,6 +22,8 @@ html {
 
 .container {
   padding: 3rem 10%;
+  max-width: 1440px;
+  margin: auto;
 }
 
 .header {
@@ -314,9 +316,6 @@ html {
   body .back {
     background-color: #1f212e;
   }
-  body h1 {
-    color: white;
-  }
   body .switch {
     background-image: -webkit-gradient(linear, left top, right top, from(#378fe6), to(#3eda82));
     background-image: linear-gradient(to right, #378fe6 0%, #3eda82 100%);
@@ -327,13 +326,10 @@ html {
   body .card-structur {
     background-color: #252a41;
   }
-  body .card--count {
-    color: white;
-  }
   body .card--count span {
     color: #8b97c6;
   }
-  body .min-card-count p {
+  body h1, body h2, body .card--count, body .min-card-count p {
     color: white;
   }
 }
@@ -345,10 +341,6 @@ html {
 
 .light-mode-theme .back {
   background-color: #f5f7ff;
-}
-
-.light-mode-theme h1 {
-  color: #1e202a;
 }
 
 .light-mode-theme .switch {
@@ -363,15 +355,11 @@ html {
   background-color: #f0f2fa;
 }
 
-.light-mode-theme .card--count {
-  color: #1e202a;
-}
-
 .light-mode-theme .card--count span {
   color: #63687e;
 }
 
-.light-mode-theme .min-card-count p {
+.light-mode-theme h1, .light-mode-theme h2, .light-mode-theme .card--count, .light-mode-theme .min-card-count p {
   color: #1e202a;
 }
 
@@ -382,10 +370,6 @@ html {
 
 .dark-mode-theme .back {
   background-color: #1f212e;
-}
-
-.dark-mode-theme h1 {
-  color: white;
 }
 
 .dark-mode-theme .switch {
@@ -401,15 +385,11 @@ html {
   background-color: #252a41;
 }
 
-.dark-mode-theme .card--count {
-  color: white;
-}
-
 .dark-mode-theme .card--count span {
   color: #8b97c6;
 }
 
-.dark-mode-theme .min-card-count p {
+.dark-mode-theme h1, .dark-mode-theme h2, .dark-mode-theme .card--count, .dark-mode-theme .min-card-count p {
   color: white;
 }
 /*# sourceMappingURL=style.css.map */

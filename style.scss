@@ -54,6 +54,8 @@ html {
 
 .container {
   padding: 3rem 10%;
+  max-width: 1440px;
+  margin: auto;
 }
 
 .header {
@@ -265,10 +267,6 @@ html {
     background-color: $very-dark-blue-pattern;
   }
 
-  h1 {
-    color: $white;
-  }
-
   .switch {
     background-image: linear-gradient(
       to right,
@@ -283,13 +281,10 @@ html {
   .card-structur {
     background-color: $dark-desaturated-blue;
   }
-  .card--count {
-    color: $white;
-    span {
+  .card--count span {
       color: $desaturated-blue;
-    }
   }
-  .min-card-count p {
+  h1, h2,  .card--count, .min-card-count p {
     color: $white;
   }
 }
@@ -300,10 +295,6 @@ html {
   .back {
     background-color: $very-pale-blue;
   }
-  h1 {
-    color: $very-dark-blue;
-  }
-
   .switch {
     background-color: $toggle;
   }
@@ -314,14 +305,12 @@ html {
   .card-structur {
     background-color: $light-grayish-blue;
   }
-  .card--count {
-    color: $very-dark-blue;
-    span {
+  .card--count span {
       color: $dark-grayish-blue;
-    }
+    
   }
 
-  .min-card-count p {
+  h1, h2, .card--count, .min-card-count p {
     color: $very-dark-blue;
   }
 }
