@@ -1,87 +1,271 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | [Challenge Name Here]</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | [Challenge Name Here]</title>
 
-  Social Media Dashboard
-  Total Followers: 23,004
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="back"></div>
+    <div class="container">
+      <section class="header">
+        <div class="header-text">
+          <h1>Social Media Dashboard</h1>
+          <p class="total">Total Followers: 23,004</p>
+        </div>
+        <div class="dark-mode">
+          <p class="dark-mode-text">Dark Mode</p>
+          <input type="checkbox" class="checkbox-dark-mode" id="checkbox">
+          <label class="switch" for="checkbox">
+          </label>
+        </div>
+      </section>
+      <section class="cards grid">
+        <article class="card-structur card facebook">
+          <div class="card-content">
+            <div class="card-head">
+                <img src="images/icon-facebook.svg" alt="facebook" />
+                <p>@nathanf</p>
+            </div>
+            <div class="card-body">
+              <p class="card--count">
+                1987
+                <span>Followers</span>
+              </p>
+            </div>
+            <div class="flex-vertical up">
+              <img src="images/icon-up.svg" alt="up" />
+              <p>12 Today</p>
+            </div>
+          </div>
+        </article>
 
-  Dark Mode
+        <article class="card-structur card twitter">
+          <div class="card-content">
+            <div class="card-head">
+              <p>
+                <img src="images/icon-twitter.svg" alt="twitter" />
+                @nathanf
+              </p>
+            </div>
+            <div class="card-body">
+              <p class="card--count">
+                1044
+                <span>Followers</span>
+              </p>
+            </div>
+            <div class="flex-vertical up">
+              <img src="images/icon-up.svg" alt="up" />
+              <p>99 Today</p>
+            </div>
+          </div>
+        </article>
 
-  
+        <article class="card-structur card instagram">
+          <div class="card-content">
+            <div class="card-head">
+              <p>
+                <img src="images/icon-instagram.svg" alt="instagram" />
+                @realnathanf
+              </p>
+            </div>
+            <div class="card-body">
+              <p class="card--count">
+                11k
+                <span>Followers</span>
+              </p>
+            </div>
+            <div class="flex-vertical up">
+              <img src="images/icon-up.svg" alt="up" />
+              <p>1099 Today</p>
+            </div>
+          </div>
+        </article>
 
-  @nathanf
-  1987
-  Followers
-  12 Today
+        <article class="card-structur card youtube">
+          <div class="card-content">
+            <div class="card-head">
+              <p>
+                <img src="images/icon-youtube.svg" alt="youtube" />
+                Nathan F.
+              </p>
+            </div>
+            <div class="card-body">
+              <p class="card--count">
+                8239
+                <span>Subscribers</span>
+              </p>
+            </div>
+            <div class="flex-vertical down">
+              <img src="images/icon-down.svg" alt="up" />
+              <p>144 Today</p>
+            </div>
+          </div>
+        </article>
+      </section>
+      <section class="overrview">
+        <article class="head">
+          <h2>Overview - Today</h2>
+        </article>
+        <section class="cards grid">
+          <article class="card-structur min-card">
+            <div class="min-card-title">
+              <p>Page Views</p>
+            </div>
+            <div class="min-card-icon">
+              <img src="images/icon-facebook.svg" alt="facebook">
+            </div>
+            <div class="min-card-count">
+              <p>87</p>
+            </div>
+            <div class="flex-vertical up min-card-porcent">
+              <img src="images/icon-up.svg" alt="up">
+              <p>3%</p>
+            </div>
+          </article>
 
-  @nathanf
-  1044
-  Followers
-  99 Today
+          <article class="card-structur min-card">
+            <div class="min-card-title">
+              <p>Likes</p>
+            </div>
+            <div class="min-card-icon">
+              <img src="images/icon-facebook.svg" alt="facebook">
+            </div>
+            <div class="min-card-count">
+              <p>52</p>
+            </div>
+            <div class="flex-vertical down min-card-porcent">
+              <img src="images/icon-down.svg" alt="down">
+              <p>2%</p>
+            </div>
+          </article>
 
-  @realnathanf
-  11k
-  Followers
-  1099 Today
+          <article class="card-structur min-card">
+            <div class="min-card-title">
+              <p>Likes</p>
+            </div>
+            <div class="min-card-icon">
+              <img src="images/icon-instagram.svg" alt="instagram">
+            </div>
+            <div class="min-card-count">
+              <p>5462</p>
+            </div>
+            <div class="flex-vertical up min-card-porcent">
+              <img src="images/icon-up.svg" alt="up">
+              <p>2257%</p>
+            </div>
+          </article>
 
-  Nathan F.
-  8239
-  Subscribers
-  144 Today
+          <article class="card-structur min-card">
+            <div class="min-card-title">
+              <p>Profiles VIews</p>
+            </div>
+            <div class="min-card-icon">
+              <img src="images/icon-instagram.svg" alt="instagram">
+            </div>
+            <div class="min-card-count">
+              <p>52k</p>
+            </div>
+            <div class="flex-vertical up min-card-porcent">
+              <img src="images/icon-up.svg" alt="up">
+              <p>1375%</p>
+            </div>
+          </article>
 
+          <article class="card-structur min-card">
+            <div class="min-card-title">
+              <p>Retweets</p>
+            </div>
+            <div class="min-card-icon">
+              <img src="images/icon-twitter.svg" alt="twitter">
+            </div>
+            <div class="min-card-count">
+              <p>117</p>
+            </div>
+            <div class="flex-vertical up min-card-porcent">
+              <img src="images/icon-up.svg" alt="up">
+              <p>303%</p>
+            </div>
+          </article>
 
+          <article class="card-structur min-card">
+            <div class="min-card-title">
+              <p>Likes</p>
+            </div>
+            <div class="min-card-icon">
+              <img src="images/icon-twitter.svg" alt="twitter">
+            </div>
+            <div class="min-card-count">
+              <p>507</p>
+            </div>
+            <div class="flex-vertical up min-card-porcent">
+              <img src="images/icon-up.svg" alt="up">
+              <p>553%</p>
+            </div>
+          </article>
 
-  Overview - Today
+          <article class="card-structur min-card">
+            <div class="min-card-title">
+              <p>Likes</p>
+            </div>
+            <div class="min-card-icon">
+              <img src="images/icon-youtube.svg" alt="youtube">
+            </div>
+            <div class="min-card-count">
+              <p>107</p>
+            </div>
+            <div class="flex-vertical down min-card-porcent">
+              <img src="images/icon-down.svg" alt="down">
+              <p>19%</p>
+            </div>
+          </article>
 
-  Page Views
-  87
-  3%
+          <article class="card-structur min-card">
+            <div class="min-card-title">
+              <p>Total Views</p>
+            </div>
+            <div class="min-card-icon">
+              <img src="images/icon-youtube.svg" alt="youtube">
+            </div>
+            <div class="min-card-count">
+              <p>1407</p>
+            </div>
+            <div class="flex-vertical down min-card-porcent">
+              <img src="images/icon-down.svg" alt="down">
+              <p>12%</p>
+            </div>
+          </article>
 
-  Likes
-  52
-  2%
-
-  Likes
-  5462
-  2257%
-
-  Profile Views
-  52k
-  1375%
-
-  Retweets
-  117
-  303%
-
-  Likes
-  507
-  553%
-
-  Likes
-  107
-  19%
-
-  Total Views
-  1407
-  12%
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+        </section>
+      </section>
+    </div>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://github.com/thotluna/">Thotluna</a>.
+    </div>
+    <script src="app.js"></script>
+  </body>
 </html>
